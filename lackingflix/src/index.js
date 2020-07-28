@@ -5,13 +5,8 @@ import Home from "./pages/Home";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import CadastroVideo from './pages/cadastro/video'
 import CadastroCategoria from "./pages/cadastro/categoria";
+import Pagina404 from "./pages/Pagina404";
 
-
-function Pagina404() {
-  return (
-    <div>Página 404</div>
-  )
-}
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
