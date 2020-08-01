@@ -24,7 +24,7 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL = location.hostname
+    const URL = window.location.hostname
       .includes('hostname')
       ? 'http://localhost:8080/categorias'
       : 'https://lackingflix.herokuapp.com/categorias';
