@@ -24,7 +24,10 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = location.hostname
+      .includes('hostname')
+      ? 'http://localhost:8080/categorias'
+      : 'https://lackingflix.herokuapp.com/categorias';
     fetch(URL)
       .then(async (res) => {
         const resposta = await res.json();
